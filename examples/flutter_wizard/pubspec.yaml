@@ -1,0 +1,24 @@
+name: flutter_wizard
+description: A new Flutter project.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  bloc: ^8.1.0
+  equatable: ^2.0.0
+  flow_builder: ^0.0.4
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.1
+
+dependency_overrides:
+  bloc:
+    path: ../../packages/bloc
+  flutter_bloc:
+    path: ../../packages/flutter_bloc
+
+flutter:
+  uses-material-design: true
